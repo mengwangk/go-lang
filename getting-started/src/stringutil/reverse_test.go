@@ -14,14 +14,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+package stringutil
 
-import (
-	"fmt"
+import "testing"
 
-	"github.com/golang/example/stringutil"
-)
-
-func main() {
-	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+func TestReverse(t *testing.T) {
+	for _, c := range []struct {
+		in, want string
+	}{
+		{"Hello, world", "dlrow ,olleH"},
+		{"Hello, 世界", "界世 ,olleH"},
+		{"", ""},
+	} {
+		got := Reverse(c.in)
+		if got != c.want {
+			t.Errorf("Reverse(%q) == %q, want %q", c.in, got, c.want)
+		}
+	}
 }

@@ -1,5 +1,5 @@
 /*
-Copyright 2014 Google Inc.
+Copyright 2015 Google Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,14 +14,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package main
+"use strict";
 
-import (
-	"fmt"
-
-	"github.com/golang/example/stringutil"
-)
-
-func main() {
-	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+function fetchMessage() {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", "/hello", false);
+    xmlHttp.send(null);
+    document.getElementById("message").innerHTML = xmlHttp.responseText;
 }
