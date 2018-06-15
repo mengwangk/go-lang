@@ -20,3 +20,4 @@ export GOBIN=$PWD/bin
 * https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2
 * https://medium.com/golang-learn/quick-go-setup-guide-on-mac-os-x-956b327222b8
 * http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/
+* https://github.com/golang-standards/project-layout
