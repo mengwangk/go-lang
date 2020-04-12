@@ -4,12 +4,20 @@ for go install
 
 * set GOPATH.
 
-export GOPATH=/Users/mengwangk/workspace/development/golang-starter/getting-started/src
+export GOPATH=/Users/mengwangk/workspace/development/go-lang/getting-started/src
 
 * set GOBIN.
 
 export GOBIN=$PWD/bin
 
+In vscode, change GOPATH in user settings.
+
+For MacOS 10.15,
+
+```bash
+export CPATH=/Library/Developer/CommandLineTools/usr/include/c++/v1
+export CGO_ENABLED=1; export CC=gcc;
+```
 
 ## Reference
 
