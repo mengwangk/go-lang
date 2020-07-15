@@ -1,10 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"stringutil"
-)
+import "fmt"
 
 func main() {
-	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+	fmt.Println("Hello, world.")
 }
