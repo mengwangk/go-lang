@@ -14,7 +14,6 @@ func pointer() {
 	p = &j         // point to j
 	*p = *p / 37   // divide j through the pointer
 	fmt.Println(j) // see the new value of j
-
 }
 
 // Struct
