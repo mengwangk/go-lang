@@ -101,7 +101,7 @@ func main() {
 	var d int = 42
 	var e float64 = float64(i)
 	var g uint = uint(f)
-	fmt.Printf("%g %v %v\n", d, e, g)
+	fmt.Printf("%v %v %v\n", d, e, g)
 
 	// Type inference
 	v := 42.1 // change me!
