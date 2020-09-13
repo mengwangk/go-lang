@@ -12,7 +12,7 @@ func add(x int, y int) int {
 	return x + y
 }
 
-func add_v2(x, y int) int {
+func addV2(x, y int) int {
 	return x + y
 }
 
@@ -58,7 +58,7 @@ func main() {
 	fmt.Println("PI value is ", math.Pi)
 
 	fmt.Println(add(3, 2))
-	fmt.Println(add_v2(1, 2))
+	fmt.Println(addV2(1, 2))
 
 	fmt.Println(swap("hello", "world"))
 
